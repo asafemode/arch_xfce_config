@@ -1,0 +1,79 @@
+# Files
+mpd_host = "127.0.0.1"
+mpd_port = "6600" 
+mpd_music_dir = "~/Muzika"
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "5"
+
+# Playlist
+playlist_disable_highlight_delay = "3"  
+message_delay_time = "3"  
+playlist_display_mode = "classic" (classic/columns)
+playlist_show_remaining_time = "yes"
+
+# song format
+song_list_format = "{(%l) }{%a - }{%t}|{%f}"
+song_library_format = "{%n - }{%t}|{%f}"
+browser_playlist_prefix = "$7$bplaylist$/b$9 "
+selected_item_prefix = ""
+selected_item_suffix = ""
+alternative_header_first_line_format = "♪ $(white){%t}|{%f}$(end) ♪"
+alternative_header_second_line_format = "$(13)%a$(end){ - %b{ (%y)}}"
+now_playing_prefix = "$b"
+now_playing_suffix = "$/b"
+
+
+# columns settings#
+song_columns_list_format = "(25)[white]{a} (25)[blue]{brE} (47)[white]{t|f} (6f)[blue]{l}"
+
+# visualizer#
+visualizer_in_stereo = "no"
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+# visualizer_sample_multiplier = "2"
+visualizer_sync_interval = "450"  
+#visualizer_sync_interval = "10"
+visualizer_type = "wave_filled" (spectrum/wave)
+visualizer_look = "▋▋"
+visualizer_color = "blue"
+
+# various settings#
+browser_display_mode = "classic" (classic/columns)
+incremental_seeking = "yes"
+autocenter_mode = "yes"
+header_visibility = "no"
+header_text_scrolling = "no"
+cyclic_scrolling = "yes"
+statusbar_visibility = "yes"
+follow_now_playing_lyrics = "yes"
+clock_display_seconds = "yes"
+ignore_leading_the = "yes"
+external_editor = "nano"
+use_console_editor = "yes"
+mouse_support = "yes"
+block_search_constraints_change_if_items_found = "yes"
+search_engine_default_search_mode = "1"
+
+# colors definitions#
+colors_enabled = "yes"
+empty_tag_color = "cyan"
+header_window_color = "blue"
+volume_color = "default"
+state_line_color = "default"
+state_flags_color = "default"
+main_window_color = "blue"
+color1 = "blue"
+color2 = "cyan"
+current_item_prefix = "$(white)$r"
+current_item_suffix = "$/r$(end)"
+progressbar_elapsed_color = "blue"
+progressbar_color = "black"
+progressbar_look = "▃▃▃"
+statusbar_color = "white"
+current_item_inactive_column_prefix = "" 
+#current_item_inactive_column_prefix = "$(cyan)$r"
+current_item_inactive_column_suffix = "$/r$(end)"
+window_border_color = "white"
+active_window_border = "magenta"
+display_remaining_time = "yes"
+user_interface = "alternative" (classic/alternative)

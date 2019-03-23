@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=conky
+Exec=conky --pause=10 -c "$HOME/.config/conky/conky_light"
+StartupNotify=false
+Terminal=false
