@@ -1,9 +1,13 @@
 # Arch Linux xfce config 
 
 Packages :
+ 
  conky 
+ 
  ![Image](https://imgur.com/5Mnzg6ol.png)
+ 
  mpd , mpc , cava(from aur) , ncmpcpp , xterm 
+ 
  ![Image](https://imgur.com/MJ8t0bZl.png)
  
  Change user name home directory in conky.desktop.
@@ -21,6 +25,9 @@ Packages :
  # Sources
 
 CONKY https://wiki.archlinux.org/index.php/conky
+
 MPD  https://wiki.archlinux.org/index.php/Music_Player_Daemon
+
 CAVA https://aur.archlinux.org/packages/cava/
+
 MUZIC VIZUALIZER https://www.devpy.me/how-to-add-a-music-visualizer-to-your-linux-desktop/ 
