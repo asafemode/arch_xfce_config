@@ -6,7 +6,7 @@ Packages :
  
  ![Image](https://imgur.com/5Mnzg6ol.png)
  
- mpd , mpc , cava(from aur) , ncmpcpp , xterm 
+ mpd , mpc , cava(from aur) , ncmpcpp , xterm , compton 
  
  ![Image](https://imgur.com/MJ8t0bZl.png)
  
@@ -25,6 +25,8 @@ Packages :
  # Sources
 
 CONKY https://wiki.archlinux.org/index.php/conky
+
+COMPTON https://wiki.archlinux.org/index.php/compton
 
 MPD  https://wiki.archlinux.org/index.php/Music_Player_Daemon
 
