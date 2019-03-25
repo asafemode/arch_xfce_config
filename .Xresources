@@ -1,0 +1,130 @@
+! Two usable terminfo names are xterm and xterm-256color
+xterm.termName: xterm-256color
+xterm.vt100.allowTitleOps: false
+
+! Fonts ====================================================
+! set font and fontsize
+xterm*faceName: DejaVu Sans Mono for Powerline:size=10:antialias=false
+! set fontsize
+! xterm*font: 8x22
+! VT Font Menu: Unreadable
+xterm*faceSize1: 8
+! VT font menu: Tiny
+xterm*faceSize2: 10
+! VT font menu: Medium
+xterm*faceSize3: 12
+! VT font menu: Large
+xterm*faceSize4: 16
+! VT font menu: Huge
+xterm*faceSize5: 22
+
+xterm.vt100.loginShell: true
+xterm.vt100.geometry: 77x25
+
+! Ensure that your locale is set up for UTF-8. If you do not use UTF-8, you may need to force xterm to more strictly follow your locale by setting
+xterm.vt100.locale: true
+
+! Cursor ====================================================
+! pointer and cursor (blinking and color)
+xterm*pointerColor: white
+xterm*pointerColorBackground: black
+xterm*cursorColor: white
+xterm*cursorBlink: true
+
+!! Selecting Text ========================================================
+! Only select text
+xterm*highlightSelection: true
+! Remove trailing spaces
+xterm*trimSelection: true
+
+!! Scrolling ========================================================
+! Use: Shift-Pageup / Shift-Pagedown to scroll or mousewheel
+! Lines of output that you can scroll back over
+xterm*saveLines: 16384
+
+! Do not scroll when there is new input e.g. tail -f /var/syslog
+xterm*scrollTtyOutput: false
+
+!! Keybinding ========================================================
+! http://blog.rot13.org/2010/03/change-font-size-in-xterm-using-keyboard.html
+! - change fontsize on the fly (ctrl+plus = increase ; ctrl+minus = decrease, ctrl+0 = default)
+! - copy/paste hotkey (ctrl+shift+c = copy ; ctrl+shift+v = paste)
+! - open url (clickable links)
+!   1) double click to highlight the full url
+!   2) Shift + click it to open it
+xterm.vt100.translations: #override \n\
+      Ctrl Alt <Key>C: copy-selection(CLIPBOARD) \n\
+      Ctrl Alt <Key>V: insert-selection(CLIPBOARD) \n\
+      Ctrl <Key> minus: smaller-vt-font() \n\
+      Ctrl <Key> plus: larger-vt-font() \n\
+      Ctrl <Key> 0: set-vt-font(d) 
+!     Ctrl <Key>M: maximize() \n\
+!     Ctrl <Key>R: restore()
+Shift <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY) \n\
+      <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+      <Btn2Up>: insert-selection(PRIMARY)
+
+! enable copy/paste hotkey to work (shift+insert = paste ; mouse highlight = copy)
+xterm*selectToClipboard: true
+! disable fullscreen hotkey alt+enter (hotkey conflicts with weechat, midnight commander ...etc)
+xterm*fullscreen: never
+! enable alt key to work
+xterm*metaSendsEscape: true
+! Fix the backspace key (for Emacs)
+xterm.vt100.backarrowKey: false
+xterm.ttyModes: erase ^?
+
+
+! double-click to select whole URLs :D
+! https://scarygliders.net/2011/12/01/customize-xterm-the-original-and-best-terminal/
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+
+*foreground: white
+*background: black
+!!*fading: 40
+*fadeColor: #002b36
+*cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
+
+!! black dark/light
+*color0: #080808
+*color8: #555753
+
+!! red dark/light
+*color1: #cc0000
+*color9: #ef2929
+
+!! green dark/light
+*color2: #4e9a06
+*color10: #8ae234
+
+!! yellow dark/light
+*color3: #c4a000
+*color11: #fce94f
+
+!! blue dark/light
+*color4: #3465a4
+*color12: #739fcf
+
+!! magenta dark/light
+*color5: #75507b
+*color13: #ad7fa8
+
+!! cyan dark/light
+*color6: #06989a
+*color14: #34e2e2
+
+!! white dark/light
+*color7: #d3d7cf
+*color15: #eeeeec
+
+xterm.vt100.borderWidth: 0
+Xcursor.theme: Breeze
+
+
+
+
+
+
