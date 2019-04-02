@@ -6,7 +6,7 @@ Packages :
  
  ![Image](https://imgur.com/5Mnzg6ol.png)
  
- mpd , mpc , cava(from aur) , ncmpcpp , xterm , compton 
+ mpd , mpc , cava(from aur) , ncmpcpp , xterm , wmctrl , compton 
  
  ![Image](https://imgur.com/MJ8t0bZl.png)
  
